@@ -13,7 +13,7 @@ int main()
     int intValue = ini->getIntValue("section1", "intValue");
     float floatValue = ini->getFloatValue("section1", "floatValue");
     const char *stringValue = ini->getStringValue("section2", "stringValue");
-    bool boolValue = ini->getIntValue("section2", "boolValue");
+    bool boolValue = ini->getBoolValue("section2", "boolValue");
 
     cout<<"[section1]-intValue:\t"<<intValue<<endl;
     cout<<"[section1]-floatValue:\t"<<floatValue<<endl;

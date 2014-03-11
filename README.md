@@ -1,13 +1,10 @@
 iniParser
 =========
 
-A simple tool to read/write .ini file, test under QT and cocos2d-x
+A simple tool to read/write .ini file, already test it under QT and cocos2d-x
 
 
-##How to use it:
-
-
-###1.Sameple file: test.ini
+###1. Sample file: test.ini
 
 	#comment this file is for test
 	[section1]
@@ -18,7 +15,7 @@ A simple tool to read/write .ini file, test under QT and cocos2d-x
 	stringValue=hello, world
 	boolValue=true
 
-###2.C++ Code to read/write it
+###2. C++ Code to read/write it
 
 	ConfigINI *ini = new ConfigINI("test.ini");
 	ini->setIntValue("section1", "intValue", 1);
@@ -30,7 +27,7 @@ A simple tool to read/write .ini file, test under QT and cocos2d-x
     int intValue = ini->getIntValue("section1", "intValue");
     float floatValue = ini->getFloatValue("section1", "floatValue");
     const char *stringValue = ini->getStringValue("section2", "stringValuee");
-    bool boolValue = ini->getIntValue("section2", "boolValue");
+    bool boolValue = ini->getBoolValue("section2", "boolValue");
  
 
 A simple way to use ini files.
@@ -39,3 +36,4 @@ A simple way to use ini files.
 
 ```./test.out```
 
+Done.
