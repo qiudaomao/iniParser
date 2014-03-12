@@ -6,7 +6,7 @@ A simple tool to read/write .ini file, already test it under QT and cocos2d-x
 
 ###1. Sample file: test.ini
 
-	#comment this file is for test
+	#comment line
 	[section1]
 	intValue=1
 	floatValue=0.100000
@@ -17,6 +17,7 @@ A simple tool to read/write .ini file, already test it under QT and cocos2d-x
 
 ###2. C++ Code to read/write it
 
+    //write
 	ConfigINI *ini = new ConfigINI("test.ini");
 	ini->setIntValue("section1", "intValue", 1);
 	ini->setFloatValue("section1", "floatValue", 0.1);
@@ -24,9 +25,10 @@ A simple tool to read/write .ini file, already test it under QT and cocos2d-x
 	ini->setBoolValue("section2", "boolValue", true);
 	ini->writeConfigFile();
 	
+    //read
     int intValue = ini->getIntValue("section1", "intValue");
     float floatValue = ini->getFloatValue("section1", "floatValue");
-    const char *stringValue = ini->getStringValue("section2", "stringValuee");
+    const char *stringValue = ini->getStringValue("section2", "stringValue");
     bool boolValue = ini->getBoolValue("section2", "boolValue");
  
 
