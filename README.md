@@ -36,6 +36,5 @@ A simple way to use ini files.
 
 ```make run```
 
-```./test.out```
 
 Done.
